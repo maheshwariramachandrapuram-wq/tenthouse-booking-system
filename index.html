@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anu Tent House</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Anu Tent House</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#booking">Book</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Complete Event Setup Solutions</h1>
+    <p>Wedding | Parties | Functions</p>
+    <a href="#booking" class="btn">Book Now</a>
+    <p>Trusted by 100+ Happy Customers</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+    <h2>Our Services</h2>
+
+    <div class="card-container">
+        <div class="card">
+    <img src="images/img1.jpg">
+    <p>Wedding Tents</p>
+</div>
+        <div class="card">Chairs & VIP Chairs</div>
+        <div class="card">Sofas</div>
+        <div class="card">Tables</div>
+        <div class="card">Carpets & Mats</div>
+        <div class="card">Cooking Utensils</div>
+        <div class="card">Coolers</div>
+        <div class="card">Handwash & Tubs</div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery">
+    <h2>Our Work</h2>
+    <div class="images">
+    <img src="https://via.placeholder.com/300">
+    <img src="images/image2.jpg">
+    <img src="images/image3.jpg">
+    <img src="images/image4.jpg">
+    <img src="images/image5.jpg">
+</div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="booking">
+    <h2>Book Your Event</h2>
+
+    <form id="bookingForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <input type="date" id="date" required>
+        <input type="text" id="location" placeholder="Event Location" required>
+    <label>Select Items & Quantity:</label>
+
+<!-- TENTS -->
+<h3>🎪 Tents</h3>
+<div class="item"><span>36x36 Tent</span><input type="number" id="tent1"></div>
+<div class="item"><span>12x6 Tent</span><input type="number" id="tent2"></div>
+<div class="item"><span>8x4 Tent</span><input type="number" id="tent3"></div>
+<div class="item"><span>6x3 Tent</span><input type="number" id="tent4"></div>
+
+<!-- SEATING -->
+<h3>🪑 Seating</h3>
+<div class="item"><span>Fiber Chairs</span><input type="number" id="fiber"></div>
+<div class="item"><span>VIP Chairs</span><input type="number" id="vip"></div>
+<div class="item"><span>Maharaja Chairs</span><input type="number" id="maharaja"></div>
+<div class="item"><span>Birthday Chairs</span><input type="number" id="birthday"></div>
+
+<!-- COOKING UTENSILS -->
+<h3>🍲 Cooking Utensils</h3>
+<div class="item"><span>60kg Bowl</span><input type="number" id="b60"></div>
+<div class="item"><span>50kg Bowl</span><input type="number" id="b50"></div>
+<div class="item"><span>40kg Bowl</span><input type="number" id="b40"></div>
+<div class="item"><span>30kg Bowl</span><input type="number" id="b30"></div>
+<div class="item"><span>25kg Bowl</span><input type="number" id="b25"></div>
+<div class="item"><span>20kg Bowl</span><input type="number" id="b20"></div>
+<div class="item"><span>15kg Bowl</span><input type="number" id="b15"></div>
+<div class="item"><span>10kg Bowl</span><input type="number" id="b10"></div>
+<div class="item"><span>5kg Bowl</span><input type="number" id="b5"></div>
+
+<!-- KITCHEN ITEMS -->
+<h3>🍴 Kitchen Items</h3>
+<div class="item"><span>Cooking Buckets</span><input type="number" id="bucket"></div>
+<div class="item"><span>Basins</span><input type="number" id="basin"></div>
+<div class="item"><span>Jugs</span><input type="number" id="jug"></div>
+<div class="item"><span>Sambar Dora</span><input type="number" id="sambar"></div>
+<div class="item"><span>Curry Spoons</span><input type="number" id="spoon"></div>
+<div class="item"><span>Kabgiri</span><input type="number" id="kabgiri"></div>
+<div class="item"><span>Kurpi</span><input type="number" id="kurpi"></div>
+<div class="item"><span>Jara</span><input type="number" id="jara"></div>
+<div class="item"><span>Kadai</span><input type="number" id="kadai"></div>
+
+<!-- EQUIPMENT -->
+<h3>🔥 Equipment</h3>
+<div class="item"><span>Single Stove</span><input type="number" id="single"></div>
+<div class="item"><span>Double Stove</span><input type="number" id="double"></div>
+<div class="item"><span>Washing Tubs</span><input type="number" id="wash"></div>
+<div class="item"><span>Water Drums</span><input type="number" id="drum"></div>
+<div class="item"><span>Rice Dishes</span><input type="number" id="rice"></div>
+
+<!-- OTHERS -->
+<h3>📦 Others</h3>
+<div class="item"><span>Side Walls</span><input type="number" id="walls"></div>        
+        
+
+<!-- FOOTER -->
+<footer>
+    <p>📞 9652742018 | 📍 Serving All Areas</p>
+</footer>
+
+<script src="script.js"></script>
+<a href="https://wa.me/919652742018" class="whatsapp-float" target="_blank">💬</a>
+<a id="waLink" target="_blank">
+  <button type="button">Send via WhatsApp</button>
+</a>
+<form onsubmit="sendToWhatsapp(event)"></form>
+<a href="https://wa.me/919652742018" target="_blank">
+  <button type="button">Send via WhatsApp</button>
+</a>
+</body>
+</html>
